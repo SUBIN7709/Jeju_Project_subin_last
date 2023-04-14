@@ -413,12 +413,19 @@ class _MyPage_Store_DetailState extends State<MyPage_Store_Detail> {
                 _updateStore();
                 Navigator.of(context).pop();
                 Navigator.pop(context);
+                Navigator.pop(context);
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const MyPage_Store(),
                   ),
                 );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => const MyPage_Store(),
+                //   ),
+                // );
               },
               child: const Text(
                 '확인',
@@ -457,6 +464,7 @@ class _MyPage_Store_DetailState extends State<MyPage_Store_Detail> {
                   setState(() {
                     _joinStoreDelete();
                     Navigator.of(context).pop();
+                    Navigator.pop(context);
                     Navigator.pop(context);
                     print("삭제");
                     Navigator.push(
